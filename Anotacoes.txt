@@ -1,0 +1,32 @@
+JavaScript
+
+Liguagem de programacao de alto nivel
+
+funções:
+Mais comum se utilizar arrow funcion
+
+const soma = (a,b) => {
+    
+}
+
+O que é o TypeScript?
+
+Libguagem de programação, permitindo a tipagem do JavaScript
+
+Para iniciar o type scrip primeiro é necessário 
+iniciar alguns comandos como, 
+
+npm init --y para criar o json
+npm i -D typescript para baixar a dependencia do typescript
+npm i -D ts-node-dev  Cria um script para agilizar o processo de compilacao
+ npx tsc --init para iniciar o typescript na aplicacao
+
+Para executar o arquivo typescript pode usar o comando 
+
+ npx tsc app.ts
+  node app.js
+
+FUNDAMENTOS E SINTAXE
+
+VARIAVEIS
+
