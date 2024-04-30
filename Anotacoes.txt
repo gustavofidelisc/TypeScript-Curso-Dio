@@ -26,7 +26,16 @@ Para executar o arquivo typescript pode usar o comando
  npx tsc app.ts
   node app.js
 
-FUNDAMENTOS E SINTAXE
 
-VARIAVEIS
+React, biblioteca do JavaScript, componentes, maior velocidade na renderização das páginas. 
 
+React hooks: Atalhos para trabalhar com algumas funções do typeScript, trabalhar com estado do componente. 
+
+Criar aplicacao  npm i -g create-react-app
+
+npx create-react-app my-app
+
+para typescript
+npx create-react-app my-app-ts --template typescript
+
+Poops driven, propriedades de um local para outro
