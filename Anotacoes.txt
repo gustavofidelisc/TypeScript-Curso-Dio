@@ -41,3 +41,5 @@ npx create-react-app my-app-ts --template typescript
 Poops driven, propriedades de um local para outro
 
 npm i styled-components, para criar estilos nos componentes, sendo personalizado dentro do JavaScript
+
+TDD, Desenvolvimento orientado a testes
