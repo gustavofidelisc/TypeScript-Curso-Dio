@@ -1,6 +1,8 @@
 import { Labels } from "./components/Labels";
 import { Layout } from "./components/Layout";
-import styled from 'styled-components'
+import { ChakraProvider, Input, Box, Center, Button, Card } from "@chakra-ui/react";
+import styled from "styled-components";
+import {CardLogin} from "./components/Login/CardLogin/CardLogin";
 /**
  * Create a component to assist in refactoring the code later.
  *
@@ -9,33 +11,15 @@ import styled from 'styled-components'
  * Another important point to consider is to avoid exporting sibling components directly. To address this issue, you can use React.Fragment or <></>.
  */
 
-// contruir componente direto no javascrip
-const Box = styled.div`
-  background-color: orange;
-  border-radius: 25px;
-  padding-left: 15px
-`
-
+// preenche toda a tela minHeight={'100.h'}
 function App() {
   return (
-    <Layout>
-      <Box>
-        <h1>Faça Login</h1>
-      </Box>
-      <Labels 
-        name={'Email'} 
-        htmlfor={'emailInput'}
-        type={'email'}
-      />
-      <Labels 
-        name={'Senha'}
-        htmlfor={'passwordInput'}
-        type={'password'}
-      />
-      <button>
-        entrar
-      </button>
-    </Layout>
+    
+    <ChakraProvider>
+      <Layout>
+        <CardLogin></CardLogin>
+      </Layout>
+    </ChakraProvider>
   );
 }
 
