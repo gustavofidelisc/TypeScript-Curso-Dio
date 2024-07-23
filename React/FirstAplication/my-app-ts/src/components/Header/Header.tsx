@@ -5,11 +5,11 @@ export const Header = () => {
         <ChakraProvider>
             <Flex className="header">
                 <Image 
-                boxSize='50px'
-                src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png" alt="Dio"
-                ml='10px'/>
-                <Text fontSize='2xl' fontWeight='bold'
-                fontFamily='Tahoma' color='white'  p={2} >DIO Bank
+                boxSize='55px'
+                src="https://hermes.digitalinnovation.one/assets/diome/logo-full.svg" alt="Dio"
+                ml='10px' />
+                <Text fontSize='25' fontWeight='bold'
+                fontFamily='Tahoma' color='white'  p={2} >Dio Bank
                 </Text>
             </Flex>
         </ChakraProvider>

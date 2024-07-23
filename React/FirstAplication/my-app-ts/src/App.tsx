@@ -1,8 +1,8 @@
-import { Labels } from "./components/Labels";
+import{useState} from "react";
 import { Layout } from "./components/Layout";
-import { ChakraProvider, Input, Box, Center, Button, Card } from "@chakra-ui/react";
-import styled from "styled-components";
-import {CardLogin} from "./components/Login/CardLogin/CardLogin";
+import { ChakraProvider, Box} from "@chakra-ui/react";
+import {CardLogin } from "./components/Login/CardLogin";
+
 /**
  * Create a component to assist in refactoring the code later.
  *
@@ -13,13 +13,16 @@ import {CardLogin} from "./components/Login/CardLogin/CardLogin";
 
 // preenche toda a tela minHeight={'100.h'}
 function App() {
+  
   return (
-    
-    <ChakraProvider>
+    <ChakraProvider >
       <Layout>
-        <CardLogin></CardLogin>
+        <Box padding="163px" backgroundColor="#171a4a" display="flex"  justifyContent="center">
+          <CardLogin/>
+        </Box>
       </Layout>
     </ChakraProvider>
+    
   );
 }
 
