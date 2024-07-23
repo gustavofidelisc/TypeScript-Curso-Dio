@@ -1,7 +1,9 @@
 import{useState} from "react";
 import { Layout } from "./components/Layout";
 import { ChakraProvider, Box} from "@chakra-ui/react";
-import {CardLogin } from "./components/Login/CardLogin";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Conta from "./pages/Conta";
 
 /**
  * Create a component to assist in refactoring the code later.
@@ -15,13 +17,18 @@ import {CardLogin } from "./components/Login/CardLogin";
 function App() {
   
   return (
-    <ChakraProvider >
+    <BrowserRouter>
+    <ChakraProvider>
       <Layout>
-        <Box padding="163px" backgroundColor="#171a4a" display="flex"  justifyContent="center">
-          <CardLogin/>
-        </Box>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/conta' element={<Conta/>} />
+      </Routes>
       </Layout>
     </ChakraProvider>
+      
+    </BrowserRouter>
+    
     
   );
 }

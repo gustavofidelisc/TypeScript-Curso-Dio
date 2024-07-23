@@ -2,8 +2,7 @@ import { ChakraProvider, Text, Box, Link, Flex } from "@chakra-ui/react";
 
 export const Footer = () => {
     return (
-        <ChakraProvider>
-            <Box bg='black' w='100%' p={4} color='white'>
+        <Box bg='black' w='100%' p={4} color='white' position="absolute" bottom="0">
             <Flex align="center" justify="space-between" px={8}>
                 <Text>© 2024 Dio Bank</Text>
                 <Flex>
@@ -12,7 +11,6 @@ export const Footer = () => {
                     <Link href="https://www.example.com" isExternal>Link 3</Link>
                 </Flex>
             </Flex>
-</Box>
-        </ChakraProvider>
+        </Box>
     )
 }
